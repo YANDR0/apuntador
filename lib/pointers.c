@@ -7,10 +7,23 @@
 
 #include "pointers.h"
 
-int bubble_sort(int *target, int count)
+int bubble_sort(int *collection, int count)
 {
-  // aqui su implementación.
-  return 0;
+    int vueltas = 0, a, error;
+    do{
+        error = 0;
+        for (int i = 0; i < count - 1; i++) {
+            if (*(collection + i) > *(collection + i + 1) ) {
+                error = 1;
+                a = *(collection + i) ;
+                *(collection + i) = *(collection + i + 1) ;
+                *(collection + i + 1) = a;
+            }
+        }
+        vueltas++;
+    }while(error == 1);
+
+    return (vueltas - 1);
 }
 
 void insertion_sort(int *collection, int count)
