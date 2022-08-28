@@ -11,12 +11,11 @@ int main(void)
     }
     printf("\n");
 
-    v = bubble_sort(arreglo, tamano);
+    insertion_sort(arreglo, tamano);
 
+    //Lista de resultados
     for(int i = 0; i < tamano; i++){
         printf("%d ",arreglo[i]);
     }
-    printf("\nSe dieron %d vueltas",v);
-
   return 0;
 }

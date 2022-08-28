@@ -7,9 +7,10 @@
 
 #include "pointers.h"
 
-int bubble_sort(int *collection, int count)
-{
+//TERMINADO
+int bubble_sort(int *collection, int count){
     int vueltas = 0, a, error;
+
     do{
         error = 0;
         for (int i = 0; i < count - 1; i++) {
@@ -22,21 +23,26 @@ int bubble_sort(int *collection, int count)
         }
         vueltas++;
     }while(error == 1);
-
     return (vueltas - 1);
 }
 
-void insertion_sort(int *collection, int count)
-{
+
+void insertion_sort(int *collection, int count){
 
 }
 
-void reverse(int *collection, int count)
-{
-
+//TERMINADO
+void reverse(int *collection, int count){
+    int a;
+    for(int i = 0; i < count/2; i++){
+        a = *(collection + i);
+        *(collection + i) = *(collection + count - i - 1);
+        *(collection + count - i - 1) = a;
+    }
 }
 
-int calulate_frequency(int *collection, int count, int target)
-{
-  return 0;
+
+int calulate_frequency(int *collection, int count, int target){
+
+    return 0;
 }
