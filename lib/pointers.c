@@ -3,7 +3,7 @@
 // Implemented by: Yael Alejandro Rodríguez Barreto
 //
 
-// PRUEBAS #########################################
+// MASTER #########################################
 
 #include "pointers.h"
 
