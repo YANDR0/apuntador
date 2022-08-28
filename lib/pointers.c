@@ -1,7 +1,9 @@
 //
 // Created by Josean Camarena on 07/07/22.
-// Implemented by: $STUDENT$
+// Implemented by: Yael Alejandro Rodríguez Barreto
 //
+
+// MASTER
 
 #include "pointers.h"
 
