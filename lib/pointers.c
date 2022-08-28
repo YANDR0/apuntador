@@ -33,7 +33,7 @@ void insertion_sort(int *collection, int count){
     for(int i = 1; i < count; i++){
         j = 0;
         a = *(collection + i);
-        while((a > *(collection + i - 1 - j)) && j < i){
+        while((a < *(collection + i - 1 - j)) && j < i){
             *(collection + i - j) = *(collection + i - 1 - j);
             j++;
         }
