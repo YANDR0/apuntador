@@ -3,8 +3,6 @@
 // Implemented by: Yael Alejandro Rodríguez Barreto
 //
 
-// MASTER #########################################
-
 #include "pointers.h"
 
 //TERMINADO
@@ -26,7 +24,7 @@ int bubble_sort(int *collection, int count){
     return (vueltas - 1);
 }
 
-
+//TERMINADO
 void insertion_sort(int *collection, int count){
     int j, a;
 
@@ -51,8 +49,11 @@ void reverse(int *collection, int count){
     }
 }
 
-
+//TERMINADO
 int calulate_frequency(int *collection, int count, int target){
-
-    return 0;
+    int cuenta = 0;
+    for(int i = 0; i < count; i++){
+        cuenta = *(collection + i) == target? cuenta + 1: cuenta;
+    }
+    return cuenta;
 }
